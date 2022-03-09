@@ -58,34 +58,38 @@ A következő táblázat "Példa" oszlopa csak egy db, a helyi hálózaton lév�
 A végpont válasz minden esetben egy JSON struktúrájú string lesz. A JSON feldolgozására a programcsomag biztosítja a szükséges metódusokat. A vezérlőpanel válaszában, nem csak az aktuálisan vezérelt kiment aktuális állapot szerepel hanem a vezérlőpanel minden ki- és bementének aktuális adata szerepel.
 A válaszban kapott relé állapotok egy bájton vannak leírva. A válaszban kapott 1 bájt adatot bináris tartalomként kell feldolgozni. Minden relé állapotát egy dedikált bit tartalmazza. 
 
+A relék állapotát a JSON objektum "rel" tagja tartalmazza.
+
 | Állapot                        | Lehetséges értékek   | 
 | -------------------------------|:---------------------| 
-| Relé aktuális állapota         | jobbról az 1. bit    |
-| Relé aktuális állapota         | jobbról a 2. bit     |
-| Relé aktuális állapota         | jobbról a 3. bit     | 
-| Relé aktuális állapota         | jobbról a 4. bit     | 
+| 1. Relé aktuális állapota         | jobbról az 1. bit    |
+| 2. Relé aktuális állapota         | jobbról a 2. bit     |
+| 3. Relé aktuális állapota         | jobbról a 3. bit     | 
+| 4. Relé aktuális állapota         | jobbról a 4. bit     | 
 
-Az input válasz mérete 2 bájt.
+Az input válasz mérete 2 bájt. 
+Az input-ok állapotát a JSON objektum "inp" tagja tartalmazza.
 
 | Állapot                         | Lehetséges értékek   | 
 | --------------------------------|:---------------------| 
-| Input aktuális állapota         | jobbról az 1. bit    |
-| Input aktuális állapota         | jobbról a 2. bit     |
-| Input aktuális állapota         | jobbról a 3. bit     | 
-| Input aktuális állapota         | jobbról a 4. bit     | 
+| 1. Input aktuális állapota         | jobbról az 1. bit    |
+| 2. Input aktuális állapota         | jobbról a 2. bit     |
+| 3. Input aktuális állapota         | jobbról a 3. bit     | 
+| 4. Input aktuális állapota         | jobbról a 4. bit     | 
 
-Az output válasz mértéke szintén 2 bájt, ebből az első bájt mindig 0.
+Az output válasz mértéke szintén 2 bájt, ebből az első bájt mindig 0. 
+Az output-ok állapotát a JSON objektum "out" tagja tartalmazza.
 
 | Állapot                          | Lehetséges értékek   | 
 | ---------------------------------|:---------------------| 
-| Output aktuális állapota         | jobbról az 1. bit    |
-| Output aktuális állapota         | jobbról a 2. bit     |
-| Output aktuális állapota         | jobbról a 3. bit     | 
-| Output aktuális állapota         | jobbról a 4. bit     | 
-| Output aktuális állapota         | jobbról az 5. bit    |
-| Output aktuális állapota         | jobbról a 6. bit     |
-| Output aktuális állapota         | jobbról a 7. bit     | 
-| Output aktuális állapota         | jobbról a 8. bit     | 
+| 1. Output aktuális állapota         | jobbról az 1. bit    |
+| 2. Output aktuális állapota         | jobbról a 2. bit     |
+| 3. Output aktuális állapota         | jobbról a 3. bit     | 
+| 4. Output aktuális állapota         | jobbról a 4. bit     | 
+| 5. Output aktuális állapota         | jobbról az 5. bit    |
+| 6. Output aktuális állapota         | jobbról a 6. bit     |
+| 7. Output aktuális állapota         | jobbról a 7. bit     | 
+| 8. Output aktuális állapota         | jobbról a 8. bit     | 
 
 
 
