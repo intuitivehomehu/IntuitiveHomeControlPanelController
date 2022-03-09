@@ -126,10 +126,10 @@ public List<Long> getCounters() {
 ```
  
 # DTO-k
-ControllerResponseModel - vezérlőpanel bemeneteinek, kimeneteinek, relék on vagy off állását és a számlálók állapotát tartalmazza
-ControlUnit - a panel azonosítóját, IP címét, szériaszámát tartalmazza
-Device - a vezérlőpanelhez csatlakoztatott eszközök adatait tartalmazza
-DeviceType - az eszköz típusának meghatározására szolgál, pl: Bluetooth kapcsolatra képes-e, mi az eszköz azonosítója
+- ControllerResponseModel - vezérlőpanel bemeneteinek, kimeneteinek, relék on vagy off állását és a számlálók állapotát tartalmazza
+- ControlUnit - a panel azonosítóját, IP címét, szériaszámát tartalmazza
+- Device - a vezérlőpanelhez csatlakoztatott eszközök adatait tartalmazza
+- DeviceType - az eszköz típusának meghatározására szolgál, pl: Bluetooth kapcsolatra képes-e, mi az eszköz azonosítója
  
 # ExampleCall
 Ez az osztály tartalmaz egy mintha hívást, amiben egy adott kontroller aktuális adatait kérdezzük le.
