@@ -56,16 +56,36 @@ A következő táblázat "Példa" oszlopa csak egy db, a helyi hálózaton lév�
 
 
 A végpont válasz minden esetben egy JSON struktúrájú string lesz. A JSON feldolgozására a programcsomag biztosítja a szükséges metódusokat. A vezérlőpanel válaszában, nem csak az aktuálisan vezérelt kiment aktuális állapot szerepel hanem a vezérlőpanel minden ki- és bementének aktuális adata szerepel.
-A válaszban kapott relé állapotok egy bájton vannak leírva. A válaszban kapott 1 bájt adatot bináris tartalom ként kell feldolgozni.  Minden relé állapotát egy dedikált bit tartalmazza. 
+A válaszban kapott relé állapotok egy bájton vannak leírva. A válaszban kapott 1 bájt adatot bináris tartalomként kell feldolgozni. Minden relé állapotát egy dedikált bit tartalmazza. 
 
 | Állapot                        | Lehetséges értékek   | 
 | -------------------------------|:---------------------| 
 | Relé aktuális állapota         | jobbról az 1. bit    |
 | Relé aktuális állapota         | jobbról a 2. bit     |
-| Relé aktuális állapota         | jobbról az 3. bit    | 
-| Relé aktuális állapota         | jobbról az 4. bit    | 
+| Relé aktuális állapota         | jobbról a 3. bit     | 
+| Relé aktuális állapota         | jobbról a 4. bit     | 
 
-Ugyan ezt le kell írni és táblázat kell inputra és outputra.
+Az input válasz mérete 2 bájt.
+
+| Állapot                         | Lehetséges értékek   | 
+| --------------------------------|:---------------------| 
+| Input aktuális állapota         | jobbról az 1. bit    |
+| Input aktuális állapota         | jobbról a 2. bit     |
+| Input aktuális állapota         | jobbról a 3. bit     | 
+| Input aktuális állapota         | jobbról a 4. bit     | 
+
+Az output válasz mértéke szintén 2 bájt, ebből az első bájt mindig 0.
+
+| Állapot                          | Lehetséges értékek   | 
+| ---------------------------------|:---------------------| 
+| Output aktuális állapota         | jobbról az 1. bit    |
+| Output aktuális állapota         | jobbról a 2. bit     |
+| Output aktuális állapota         | jobbról a 3. bit     | 
+| Output aktuális állapota         | jobbról a 4. bit     | 
+| Output aktuális állapota         | jobbról az 5. bit    |
+| Output aktuális állapota         | jobbról a 6. bit     |
+| Output aktuális állapota         | jobbról a 7. bit     | 
+| Output aktuális állapota         | jobbról a 8. bit     | 
 
 
 
