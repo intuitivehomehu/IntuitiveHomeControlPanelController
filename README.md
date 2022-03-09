@@ -58,7 +58,8 @@ A következő táblázat "Példa" oszlopa csak egy db, a helyi hálózaton lév�
 A végpont válasz minden esetben egy JSON struktúrájú string lesz. A JSON feldolgozására a programcsomag biztosítja a szükséges metódusokat. A vezérlőpanel válaszában, nem csak az aktuálisan vezérelt kiment aktuális állapot szerepel hanem a vezérlőpanel minden ki- és bementének aktuális adata szerepel.
 A válaszban kapott relé állapotok egy bájton vannak leírva. A válaszban kapott 1 bájt adatot bináris tartalom ként kell feldolgozni.  Minden relé állapotát egy dedikált bit tartalmazza. 
 
-
+| Állapot                        | Lehetséges értékek   | 
+| -------------------------------|:---------------------| 
 | Relé aktuális állapota         | jobbról az 1. bit    |
 | Relé aktuális állapota         | jobbról a 2. bit     |
 | Relé aktuális állapota         | jobbról az 3. bit    | 
