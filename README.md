@@ -1,6 +1,6 @@
 # Áttekintés
 
-Ez a leírás a MOBSEC17 Kft., intuitív otthon nevű rendszerének vezérlő panele és Android alkalmazások közötti kommunikációhoz ad segítséget. A MOBSECT17 Kft. a nyílt forráskódú Android API gyűjteményt azon fejlesztőknek szánja, akik az intuitive home vezérlő panellel saját fejlesztésű mobiltelefonos alkalmazást szeretnének fejleszteni.
+Ez a leírás a MOBSEC17 Kft., intuitív otthon nevű rendszerének vezérlőpanele és Android alkalmazások közötti kommunikációhoz nyújt segítséget. A MOBSECT17 Kft. a nyílt forráskódú Android API gyűjteményt azon fejlesztőknek szánja, akik az intuitive home vezérlő panellel saját fejlesztésű mobiltelefonos alkalmazást szeretnének fejleszteni.
 
 Az intuitive home vezérlőpanel egy LAN kapcsolattal és I/O portokkal rendelkező vezérlő panel, szabály alapú automatizálási funkciókkal. A nyílt forráskódú komponensként publikált programcsomag a LAN kapcsolaton keresztüli I/O kezelést valósítja meg. 
 
