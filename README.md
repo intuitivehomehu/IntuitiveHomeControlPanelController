@@ -45,7 +45,8 @@ Az interfész működéséhez a vezérlő panelt a helyi hálózathoz kell csatl
 A végpont paraméterében az "r" mint relé, az "o" mint digitális száraz kontaktus kimenet (output) szerepelhet. A beállítani kívánt érték a kiment állapotát írja le és a hívásban a v paraméter értékeként lehet átadni. A v paraméter értéke lehet 0 vagy 1. A v paraméter 0 értéke azt jelenti, hogy a kiment off (szakadás) állapotba kerül. A v paraméter 1 értéke azt jelenti, hogy a kimenet on (rövidzár) állapotba kerül.
 A következő táblázat "Példa" oszlopa csak egy db, a helyi hálózaton lévő eszközre vonatkozik. A vezérlő interfészhez a következő lekérdezés paramétereket lehet hozzáadni:
 
-|
+
+
 | Lekérdezés paraméter              | Lehetséges értékek           | Leírás                                        | Példa                        |
 | ----------------------------------|:----------------------------:| ---------------------------------------------:|-----------------------------:|
 | <nincs lekérdezés paraméter>      | ---                          | Visszaadja a jelenlegi értéket (leolvasás).   | http://ac11/outs.cgi         |
@@ -53,18 +54,23 @@ A következő táblázat "Példa" oszlopa csak egy db, a helyi hálózaton lév�
 | o                                 | 0 (off), 1 (on)              | Digitális kimenet kapcsolása                  | http://ac11/outs.cgi?o=8&v=1 |
 
 
+
 A végpont válasz minden esetben egy JSON struktúrájú string lesz. A JSON feldolgozására a programcsomag biztosítja a szükséges metódusokat. A vezérlőpanel válaszában, nem csak az aktuálisan vezérelt kiment aktuális állapot szerepel hanem a vezérlőpanel minden ki- és bementének aktuális adata szerepel.
 A válaszban kapott relé állapotok egy bájton vannak leírva. A válaszban kapott 1 bájt adatot bináris tartalom ként kell feldolgozni.  Minden relé állapotát egy dedikált bit tartalmazza. 
 
-Ide kell egy táblázat 
-relé aktuális állapota: jobbról az 1. bit 
-relé aktuális állapota: jobbról az 2. bit
-relé aktuális állapota: jobbról az 3. bit
-relé aktuális állapota: jobbról az 4. bit
-Ugyan ezt le kell írni és táblázat kell inputra és outputra.
-A számlálók aktuális állását a JSON válasz utolsó „cnt” tagja tartalmazza.
 
+| Relé aktuális állapota         | jobbról az 1. bit    |
+| Relé aktuális állapota         | jobbról a 2. bit     |
+| Relé aktuális állapota         | jobbról az 3. bit    | 
+| Relé aktuális állapota         | jobbról az 4. bit    | 
+
+Ugyan ezt le kell írni és táblázat kell inputra és outputra.
+
+
+
+A számlálók aktuális állását a JSON válasz utolsó „cnt” tagja tartalmazza.
 Az egyes inputok számlálók állását decimális formátumban, vesszővel elválasztva, balról az 1. inputtól indulva sorolja fel a válasz.
+
 
 # ControllerUtil
 A ControllerUtil.java osztály alapmetódusai lehetőséget nyújtanak a vezérlő adatainak lekérdezésére, ilyen például a kontroller csatornájának lekérdezése (relé vagy digitális kimenet) és számának lekérdezése.
