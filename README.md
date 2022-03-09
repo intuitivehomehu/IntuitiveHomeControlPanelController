@@ -9,15 +9,15 @@ Az intuitive home vezérlőpanel és az Android alapú mobil eszköz közötti k
 A vezérlő panel funkciói közül az I/O kezelést valósítja meg jelen programcsomag. A vezérlőpanel 4 relé kimenettel rendelkezik, amelyek maximum 24V feszültségű és maximum 1A áramerősségű kapcsolás tudnak átengedni magukon. A panelen további 4 darab 12V egyenáramú vezérlési kimenet (szárazkontaktus) van, melyek külső relék működtetésére alkalmasak, jelentős teljesítményt nem tudnak átereszteni. 
 A panelen található 8 db szárazkontaktus bemenet is, melyek mindegyike 2 byte-os számlálóval is el van látva. A számlálók állását minden felkapcsolásból, le kapcsolásba állapot váltás eggyel növeli és a vezérlőpanel újraindításával a számlálók nullázhatóak. Jelen programcsomag az alábbi funkciókat implementálja:
 
-- 1. relé kimenet fel és le kapcsolása
-- 2. relé kimenet fel és le kapcsolása
-- 3. relé kimenet fel és le kapcsolása
-- 4. relé kimenet fel és le kapcsolása
+-  1.relé kimenet fel és le kapcsolása
+-  2.relé kimenet fel és le kapcsolása
+-  3.relé kimenet fel és le kapcsolása
+-  4.relé kimenet fel és le kapcsolása
 
-- 1. szárazkontaktus kimenet fel és le kapcsolása
-- 2. szárazkontaktus kimenet fel és le kapcsolása
-- 3. szárazkontaktus kimenet fel és le kapcsolása
-- 4. szárazkontaktus kimenet fel és le kapcsolása
+-  1.szárazkontaktus kimenet fel és le kapcsolása
+-  2.szárazkontaktus kimenet fel és le kapcsolása
+-  3.szárazkontaktus kimenet fel és le kapcsolása
+-  4.szárazkontaktus kimenet fel és le kapcsolása
 
 - 1. szárazkontaktus bemenet aktuális állapotának lekérdezése
 - 2. szárazkontaktus bemenet aktuális állapotának lekérdezése
