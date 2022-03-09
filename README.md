@@ -9,30 +9,33 @@ Az intuitive home vezérlőpanel és az Android alapú mobil eszköz közötti k
 A vezérlő panel funkciói közül az I/O kezelést valósítja meg jelen programcsomag. A vezérlőpanel 4 relé kimenettel rendelkezik, amelyek maximum 24V feszültségű és maximum 1A áramerősségű kapcsolás tudnak átengedni magukon. A panelen további 4 darab 12V egyenáramú vezérlési kimenet (szárazkontaktus) van, melyek külső relék működtetésére alkalmasak, jelentős teljesítményt nem tudnak átereszteni. 
 A panelen található 8 db szárazkontaktus bemenet is, melyek mindegyike 2 byte-os számlálóval is el van látva. A számlálók állását minden felkapcsolásból, le kapcsolásba állapot váltás eggyel növeli és a vezérlőpanel újraindításával a számlálók nullázhatóak. Jelen programcsomag az alábbi funkciókat implementálja:
 
-1. relé kimenet fel és le kapcsolása
-2. relé kimenet fel és le kapcsolása
-3. relé kimenet fel és le kapcsolása
-4. relé kimenet fel és le kapcsolása
-1. szárazkontaktus kimenet fel és le kapcsolása
-2. szárazkontaktus kimenet fel és le kapcsolása
-3. szárazkontaktus kimenet fel és le kapcsolása
-4. szárazkontaktus kimenet fel és le kapcsolása
-1. szárazkontaktus bemenet aktuális állapotának lekérdezése
-2. szárazkontaktus bemenet aktuális állapotának lekérdezése
-3. szárazkontaktus bemenet aktuális állapotának lekérdezése
-4. szárazkontaktus bemenet aktuális állapotának lekérdezése
-5. szárazkontaktus bemenet aktuális állapotának lekérdezése
-6. szárazkontaktus bemenet aktuális állapotának lekérdezése
-7. szárazkontaktus bemenet aktuális állapotának lekérdezése
-8. szárazkontaktus bemenet aktuális állapotának lekérdezése
-1. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
-2. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
-3. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
-4. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
-5. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
-6. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
-7. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
-8. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
+- 1. relé kimenet fel és le kapcsolása
+- 2. relé kimenet fel és le kapcsolása
+- 3. relé kimenet fel és le kapcsolása
+- 4. relé kimenet fel és le kapcsolása
+
+- 1. szárazkontaktus kimenet fel és le kapcsolása
+- 2. szárazkontaktus kimenet fel és le kapcsolása
+- 3. szárazkontaktus kimenet fel és le kapcsolása
+- 4. szárazkontaktus kimenet fel és le kapcsolása
+
+- 1. szárazkontaktus bemenet aktuális állapotának lekérdezése
+- 2. szárazkontaktus bemenet aktuális állapotának lekérdezése
+- 3. szárazkontaktus bemenet aktuális állapotának lekérdezése
+- 4. szárazkontaktus bemenet aktuális állapotának lekérdezése
+- 5. szárazkontaktus bemenet aktuális állapotának lekérdezése
+- 6. szárazkontaktus bemenet aktuális állapotának lekérdezése
+- 7. szárazkontaktus bemenet aktuális állapotának lekérdezése
+- 8. szárazkontaktus bemenet aktuális állapotának lekérdezése
+
+- 1. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
+- 2. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
+- 3. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
+- 4. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
+- 5. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
+- 6. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
+- 7. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
+- 8. szárazkontaktus bemenet aktuális számláló állásának lekérdezése
 
 A vezérlő panelt kezelő programcsomag használatához szükségünk lesz egy natív Android alkalmazás fejlesztő környezetre. Jelen forráskód csomag egy importálható projekt, amely tartalmazza a vezérlőpanel kezeléséhez szükséges alap Java osztályokat. Szükség esetén a meglévő osztályok igény szerint átírhatóak, bővíthetőek. 
 
